@@ -1,5 +1,6 @@
 package com.example.fragments
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.os.Bundle
 import android.service.media.MediaBrowserService.BrowserRoot
@@ -45,7 +46,7 @@ class BlankFragmentOne : Fragment() {
             buttonListener.onButtonPressed("Button has been clicked")
         }
         clear.setOnClickListener {
-            buttonListener.onButtonPressed("")
+            buttonListener.onButtonPressed("Cleared")
         }
     }
 }
