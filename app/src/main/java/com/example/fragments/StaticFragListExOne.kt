@@ -42,7 +42,7 @@ class StaticFragListExOne : Fragment() {
         //lv.se
         lv.setOnItemClickListener { adapterView, view, i, l ->
             val txtfrag = parentFragmentManager.findFragmentById(R.id.fragment2) as StaticFragListExTwo
-            txtfrag.change("Android OS:-" + AndroidOS[i])       // change is a method in second fragment.
+            txtfrag.change("Android OS:-" + AndroidOS[i])       // "change" is a method in second fragment.
             lv.setSelector(R.color.purple)
         }
         return view
