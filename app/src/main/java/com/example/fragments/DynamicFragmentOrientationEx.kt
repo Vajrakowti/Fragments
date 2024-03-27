@@ -13,6 +13,7 @@ class DynamicFragmentOrientationEx : AppCompatActivity() {
         val fm: FragmentManager = supportFragmentManager
         val fragmentTransaction : FragmentTransaction = fm.beginTransaction()
         val displaymode = resources.configuration.orientation
+
         if(displaymode == 1) { // it portrait mode
             val f1 = DynamicFragOrientExOne()
             fragmentTransaction.replace(android.R.id.content, f1)
